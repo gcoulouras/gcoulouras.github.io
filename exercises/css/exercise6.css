@@ -1,0 +1,46 @@
+           body{
+                font-family: Arial, Arial, Helvetica, sans-serif;
+                background-color: #5fccfb;
+            }
+           
+            h1 {
+                color: #fbfafe;
+                background-color: #091ed7ec;
+                padding: 1.5rem;
+                text-transform: uppercase;
+                font-family: "Figtree", Courier, monospace;
+            }
+
+            h2 {
+                margin: 1.5rem;
+                color: #0b0b0b;
+
+            }
+
+            p{
+                padding-left: 1.3rem;
+                padding-right: 1.3rem ;
+                line-height: 1.5rem;
+                font-family: "Courier New", Courier, monospace;}
+
+            img{
+                float: right;
+                border: 2px #000200 solid;
+                margin: 1.5rem;
+                max-width: 100%;
+            }
+
+            a:link {
+                color: #E32400;
+                text-decoration: none;}
+
+            a:visited {
+                color: #5C0700;}
+
+            a:hover {
+                color: #006D8F;
+                text-decoration: underline; }
+
+            a:active {
+                color: darkblue;}
+
