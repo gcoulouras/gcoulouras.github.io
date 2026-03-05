@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.25rem;
+    background-color: #85181e;
+    color: #f5f5f5;}
+
+h1{
+   font-family: "Libre Franklin", sans-serif;
+   font-size: 40px;
+   line-height: 3rem ;}
+
+ img{
+    max-width: 100%;}
+
+ p{
+    padding-right: 1.3rem ;
+    line-height: 1.5rem;}
+
+ ol{
+    padding-right: 1.3rem;
+    line-height: 1.5rem;
+    margin: 1rem;}
+
+ ul{
+    padding-right: 1.3rem ;
+    line-height: 1.5rem;
+     margin: 1rem;}
+
+hr {
+  border: none;
+  height: 3px;
+  background-color: black}
+
+ a:link {
+    color: #f5f5f5;
+    text-decoration: none;}
+
+a:visited {
+    color: rgb(156, 205, 241);
+    text-decoration: underline;}
+
+a:hover {
+    color: rgb(62, 181, 235);
+    text-decoration: underline; }
