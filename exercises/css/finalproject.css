@@ -1,0 +1,286 @@
+* {
+   box-sizing: border-box;
+}
+
+html {
+    font-family: "Merriweather", serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* name and navbar */
+h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 25px;
+    background-color: #034F1A;
+    color: white;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #034F1A;;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    font-size: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+}
+
+nav li {
+    list-style-type: none;
+    margin: 2rem;
+}
+
+nav a:hover {
+    border: 0.25rem solid white;
+    transition: 0.5s ease;
+    color: white;
+    background-color: maroon;
+}
+/* hero image */
+#hero {
+  display: flex;
+  background-image: url("../../images/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100%;
+
+  margin: 0;
+  padding: 0;
+  position: relative;
+  align-content: center;
+  justify-content: center;
+}
+
+#tagline {
+    position: absolute;
+    margin: 0px;
+    padding: 10px;
+}
+
+/* white content boxes */
+.contentbox {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid black;
+    padding: 1.3rem;
+    margin: .5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1.2rem;
+    justify-content: center;
+}
+
+.contentbox a:active {
+    color: purple;
+}
+
+/* body */
+body {
+    background-color: #EAE8CD;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+/* footer */
+footer {
+    background-color: #034F1A;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    
+    display: grid;
+    grid-template-rows: 50px;
+    grid-template-columns: 1fr 1fr;
+}
+
+#LinkedIn {
+    grid-column: 1 / 2;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+#email {
+    grid-column: 2 / 3;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+}
+
+footer a:link {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: white;
+    text-decoration: underline;
+}
+footer a:hover {
+    border: 0.25rem solid white;
+    transition: 0.5s ease;
+    color: white;
+    background-color: maroon;
+    padding: 10px;
+}
+
+footer a:active {
+    color: white;
+    text-decoration: none;
+}
+
+/* About Me */ 
+.aboutmewrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#bio {
+    grid-column: 1 / 2;
+}
+
+#profphoto {
+    grid-column: 2 / 3;
+}
+
+/* Portfolio */ 
+.portfoliowrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+#documentation {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+#journalism {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+#grantproposal {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+#webdesign {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+/* Documentation */ 
+.documentationwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#wordmanual {
+    grid-column: 1 / 2;
+}
+
+#unity {
+    grid-column: 2 / 3;
+}
+
+/* Journalism */ 
+.journalismwrapper {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+#etj {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+#adams {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+#carle {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+#sample {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+/* Web Design */ 
+.webdesignwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#exercises {
+    grid-column: 1 / 2;
+}
+
+#accwebsite {
+    grid-column: 2 / 3;
+}
+
+/* Contact Me */
+.contactmewrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#ContactLinkedIn {
+    grid-column: 1 / 2;
+}
+
+#ContactLinkedIn img {
+    border: 1px solid black;
+}
+
+#Contactemail {
+    grid-column: 2 / 3;
+    align-content: center;;
+}
+
+/* Responsiveness */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1000px) {
+ .aboutmewrapper, .contactmewrapper, .documentationwrapper, .journalismwrapper, .portfoliowrapper, .webdesignwrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .contentbox {
+        grid-row: auto;
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    .aboutmewrapper, .contactmewrapper, .documentationwrapper, .journalismwrapper, .portfoliowrapper, .webdesignwrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .contentbox {
+        grid-row: auto;
+        grid-column: auto;
+    }
+}
